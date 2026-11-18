@@ -93,7 +93,7 @@ class OptimizationParams(ParamGroup):
         self.random_background = False
         
         self.feature_lr = 0.0016 # 0.0025
-        self.max_points = 4000000
+        self.max_points = 1000000
 
         # Opacity & weight
         self.set_weight = 0.28
