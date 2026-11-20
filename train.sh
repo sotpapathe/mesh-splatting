@@ -29,3 +29,5 @@ if [ ! -f "$modeldir/mesh.ply" ]
 then
 	python3 create_ply.py --out "$modeldir/mesh.ply" "$modeldir/point_cloud/iteration_$ITERATIONS"
 fi
+
+python3 texture.py --out "$modeldir/mesht.ply" "$modeldir/point_cloud/iteration_$ITERATIONS"
